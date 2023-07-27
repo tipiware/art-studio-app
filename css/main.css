@@ -1,0 +1,280 @@
+body {
+	overflow-x: hidden; /*--right gutter fix--*/
+    font-family: sans-serif;
+    color: #505962;
+    
+}
+.navbar{
+  text-transform: uppercase;
+   background-color: #fff;
+}
+.navbar-brand img {
+    height: 32px;
+}
+
+.custom-nav{
+ background-color: #2c234d;
+ }
+.custom-nav-link{
+ color: #fda729 !important; 
+}
+.home-inner {
+    background-image: url('../images/grafiti.jpg');
+        filter: brightness(60%); 
+
+}
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+.caption h3{
+    color: #d8d3e7;
+    font-size:50px;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+.caption h5{
+    color: #FFF;
+     font-size: 40px;
+    text-transform: uppercase;
+}
+.start-btn{
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 60px;
+    left: 43%;
+    background-color: #fda729;
+ } 
+/*---  Landing Page Fix --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.center {
+    margin-top: 20px;
+    text-align: center;
+}
+.center p{
+    text-align: left
+}
+.info-box{
+    margin-bottom: 20px;
+    
+}
+.info-box:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
+}
+
+.heading{
+    margin-bottom: 20px;
+}
+.info-box i{
+    margin-top: 5px;
+    font-size: 40px;
+    color: #fda729;
+}
+/*div that show numbers with image as background */
+.con{
+     position: relative; 
+     height: 400px;
+    display: block;
+}
+.numbers{
+    position: absolute;
+      bottom: -20%;
+    left:4%;
+      width: 90%;
+    display: block;
+    height: 90%;
+  }
+ 
+.numbers-div{
+    display: inline-block;
+    width: 30%;
+     text-align: center;
+    color:#fda729;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    font-size: 70px;
+    border-right: 3px solid #fff;
+ }
+
+.numbers-text{
+     color:#fff;
+    font-size: 35px;
+    border-top: 4px solid #fda729;
+    border-right: none;
+    margin-top: 10px;
+
+}
+.numbers img{
+    filter: brightness(60%); 
+    filter: blur(4px);
+}
+.phrase{
+    background-color: #fda729;
+    color: #fff;
+    padding-bottom: 0px;
+    padding: 30px 0px;
+    text-align: center;
+
+}
+.phrase h4{
+font-size: 40px;
+
+}
+.phrase p{
+text-align: center;
+font-size: 25px;
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+
+.animated-text{
+  animation-name: rightFadeInOut;
+   animation-duration: 4s;
+ 
+}
+
+.home-inner {
+	opacity: 0;
+	transform: rotate(180deg);
+ 	transition: 1500ms;
+}
+.home-inner.animate {
+	opacity: 1;
+	transform: rotate(0deg);
+}
+
+.footer .row{
+    background-color:#2c234d;
+     padding: 1rem 2rem;
+    color: #fff; 
+ }
+.footer strong{
+    color: #fda729; 
+}
+.footer img{
+    height: 2rem;
+    margin : 1.5rem 0;
+
+}
+
+.no-padding{
+  padding-top: 0px;  
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.caption h3{
+font-size: 25px;
+    }
+.caption h5{
+font-size: 20px;
+    }
+.start-btn{
+left: 20%;
+font-size: 15px;    
+    }
+.numbers-div{
+font-size:25px;
+    } 
+.numbers-text{
+font-size: 17px;
+    }
+.phrase h4{
+font-size: 20px;
+    }
+.phrase p{
+font-size:13px;    
+    }
+}
+
+.background{
+    height:100vh;
+    width:100%;
+    background-image:url(https://media.nomadicmatt.com/maldivesguide.jpg);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+  }
+
+.programContainer {
+  background-color: white;
+}
+
+.label {
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .itemContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin: 40px auto;
+    max-width: 1300px;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+  
+  
